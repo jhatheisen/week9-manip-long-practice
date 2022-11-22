@@ -10,6 +10,10 @@ h1 {
   padding: 50px;
 }
 
+h2 {
+  padding: 50px;
+}
+
 ul {
   border: 2px solid antiquewhite;
   display: flex;

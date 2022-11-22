@@ -39,11 +39,19 @@ async function setHeader() {
 
 async function startClock() {
   let time = new Date().toTimeString();
+  let colors = ['antiquewhite', 'black'];
+  let choice = 0;
   setInterval(() => {
     time = new Date().toTimeString();
     let clock = document.body.querySelector('#clock');
     clock.innerText = time;
-  }, 100);
+    if (choice % 2 === 0) {
+      clock.style.color = colors[0];
+    } else {
+      clock.style.color = colors[1];
+    }
+    choice++;
+  }, 1000);
 }
 
 
